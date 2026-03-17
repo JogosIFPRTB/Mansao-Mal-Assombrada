@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Sprites\drp.cs" />
+    <Compile Include="Assets\Scripts\player.cs" />
     <Compile Include="Assets\Scripts\TrocaCenas.cs" />
+    <Compile Include="Assets\Scripts\movimento.cs" />
     <Compile Include="Assets\Scripts\Cronometro.cs" />
     <Compile Include="Assets\Scripts\NewMonoBehaviourScript.cs" />
   </ItemGroup>
