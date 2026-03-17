@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\player.cs" />
     <Compile Include="Assets\Scripts\movimento.cs" />
+    <Compile Include="Assets\Scripts\Persguidor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
