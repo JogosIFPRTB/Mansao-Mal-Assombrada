@@ -49,11 +49,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Assets\Sprites\drp.cs" />
-=======
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Telas\TrocaTelas.cs" />
+    <Compile Include="Assets\Scripts\player.cs" />
+    <Compile Include="Assets\Scripts\TrocaCenas.cs" />
+    <Compile Include="Assets\Scripts\movimento.cs" />
+    <Compile Include="Assets\Scripts\Cronometro.cs" />
+    <Compile Include="Assets\Scripts\Persguidor.cs" />
+    <Compile Include="Assets\Scripts\NewMonoBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -79,18 +82,6 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-=======
->>>>>>> 914b37fc221b62e1a0bf361030609666b3d2f25f
-    <Compile Include="Assets\Scripts\player.cs" />
-    <Compile Include="Assets\Scripts\TrocaCenas.cs" />
-    <Compile Include="Assets\Scripts\movimento.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Cronometro.cs" />
-    <Compile Include="Assets\Scripts\NewMonoBehaviourScript.cs" />
-=======
-    <Compile Include="Assets\Scripts\Persguidor.cs" />
->>>>>>> 00d77588fc2b7b428fe2f4311e1d62f4b6459299
->>>>>>> 914b37fc221b62e1a0bf361030609666b3d2f25f
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
