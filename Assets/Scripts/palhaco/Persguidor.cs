@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Persguidor : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Persguidor : MonoBehaviour
     [SerializeField] private Transform Player;
 
     private Transform targetPoint;
+
+    public string gameover = "gameOver";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,6 +43,13 @@ public class Persguidor : MonoBehaviour
 
 
 
+    }
+     private void OnTriggerEnter2D(Collider2D other)
+    {
+       if (other.CompareTag("Player"))
+        {
+           SceneManager.LoadScene(gameover);
+       }
     }
 
 
