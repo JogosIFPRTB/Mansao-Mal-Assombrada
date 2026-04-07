@@ -449,7 +449,7 @@ Transform:
   m_GameObject: {fileID: 1688313840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: 3.17, z: 0}
+  m_LocalPosition: {x: -0.59, y: 4.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -516,7 +516,7 @@ Rigidbody2D:
   m_Mass: 4
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -540,6 +540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d37458db16cc2e4b8299dc550b3e1f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InimigoCai
+  velocidade: 5
+  limiteInferior: -4
+  spawnY: 4
+  limiteX: 3.5
 --- !u!1 &2106571973
 GameObject:
   m_ObjectHideFlags: 0
