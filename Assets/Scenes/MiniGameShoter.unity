@@ -152,6 +152,7 @@ MonoBehaviour:
   velocidade: 3
   aumentoDeVelo: 0.1
   Player: {fileID: 1777465181}
+  gameover: gameOver
 --- !u!212 &812060034
 SpriteRenderer:
   serializedVersion: 2
