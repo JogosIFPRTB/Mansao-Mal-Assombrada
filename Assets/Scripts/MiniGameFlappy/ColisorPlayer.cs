@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ColisorPlayer : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,5 +12,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {
         
+    }
+    void OnTriggerEnter2D(Collider2D colidiu)
+    {
+        if (colidiu.CompareTag("Inimigo"))
+        {
+            Debug.Log("Você colidiu com um inimigo, cuidado...");
+
+        }
     }
 }

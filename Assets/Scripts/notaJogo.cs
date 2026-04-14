@@ -3,20 +3,19 @@ using UnityEngine;
 
 public class notaJogo : MonoBehaviour
 {
-    public float hitTime;
+    public float hitTime = 3f;
     public float perfeito = 0.15f;
     public float acerta = 0.25f;
-    private bool naoAcertou = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private bool washit = false;
+    private SpriteRenderer sr;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !naoAcertou) ;
+        if (Input.GetKeyDown(KeyCode.Escape) && !washit)
         {
             checkHit();
         }
@@ -24,13 +23,35 @@ public class notaJogo : MonoBehaviour
     }
     void checkHit()
     {
-        float tempocerto = Cronometro.time;
+        float tempocerto = gamertime.time;
         float difference = Mathf.Abs(tempocerto - hitTime);
 
         if (difference <= perfeito )
         {
+            SetColor(Color.green);
             Debug.Log("perfeito ae truta");
         }
+        else if (difference <= acerta )
+        {
+            SetColor(Color.yellow);
+            Debug.Log("acertou");
+
+        }
+        else
+        {
+            SetColor(Color.red);
+            Debug.Log("não acertou");
+        }
+
+        void SetColor(Color color)
+        {
+            sr.color = color;
+        }
+    }
+    void hit()
+    {
+        washit = true;
+        Destroy(gameObject);
     }
 
 }

@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Porta1
-  - Porta2
-  - Porta3
-  - ritmo
+  tags: []
   layers:
   - Default
   - TransparentFX
