@@ -8,6 +8,7 @@ TagManager:
   - Porta2
   - Porta3
   - Inimigo
+  - PontoF
   layers:
   - Default
   - TransparentFX
