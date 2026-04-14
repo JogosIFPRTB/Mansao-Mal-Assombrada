@@ -20,10 +20,5 @@ public class ColisorPlayer : MonoBehaviour
             Debug.Log("Você colidiu com um inimigo, cuidado...");
 
         }
-        if (colidiu.CompareTag("PontoF"))
-        {
-            Debug.Log("Ganhou 1 Ponto");
-
-        }
     }
 }
