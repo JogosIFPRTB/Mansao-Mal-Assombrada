@@ -30,18 +30,19 @@ public class Persguidor : MonoBehaviour
 
     void Update()
     {
-        if (Player == null) return;
+       if (Player == null) return;
 
-        transform.position = Vector2.MoveTowards(transform.position,
-                                targetPoint.position,
-                               TempoAgora * Time.deltaTime);
+        {
+           transform.position = Vector2.MoveTowards(transform.position,
+                              targetPoint.position,
+                              TempoAgora * Time.deltaTime);
 
-        TempoAgora += aumentoDeVelo * Time.deltaTime;
+            TempoAgora += aumentoDeVelo * Time.deltaTime;
 
-        TempoAgora = Mathf.Clamp(TempoAgora, velocidade, MaximoDeVelo);
-        Debug.Log("Aumentando");
-
-
+            TempoAgora = Mathf.Clamp(TempoAgora, velocidade, MaximoDeVelo);
+            Debug.Log("Aumentando");
+        }
+       
 
     }
      private void OnTriggerEnter2D(Collider2D other)
