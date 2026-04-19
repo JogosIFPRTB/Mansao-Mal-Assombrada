@@ -12,7 +12,7 @@ public class Arma : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(PrefabBala, SpawnBala.position, SpawnBala.rotation);
         }

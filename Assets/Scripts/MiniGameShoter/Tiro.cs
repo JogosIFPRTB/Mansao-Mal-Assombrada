@@ -8,13 +8,18 @@ public class Tiro : MonoBehaviour
     void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = transform.forward * velocidade;
+        rb.linearVelocity = transform.up * velocidade;
         Destroy(gameObject, TempoDeVida);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Inimigo"))
+            {
+                Destroy(collision.gameObject);
+            }
+        Destroy(gameObject);
     }
+
+
 }
