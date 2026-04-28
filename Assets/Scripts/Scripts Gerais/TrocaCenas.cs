@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class TrocaCenas : MonoBehaviour
 {
-    public string JOGO1 = "SampleScene";
-    public string jogo2 = "TESTE";
-    public string jogo3 = "TESTE2";
+    public string JOGO1 = "MiniGameFlappy";
+    public string jogo2 = "ritmo";
+    public string jogo3 = "MiniGameShoter";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,13 +27,5 @@ public class TrocaCenas : MonoBehaviour
         {
             SceneManager.LoadScene(jogo3);
         }
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-
     }
 }

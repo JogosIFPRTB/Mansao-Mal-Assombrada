@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Porta1
+  - PontoF
+  - Inimigo
   - Porta2
   - Porta3
-  - Inimigo
-  - PontoF
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class PlayerOver : MonoBehaviour
         if (other.CompareTag("Inimigo"))
         {
             SceneManager.LoadScene(gameover);
+            Debug.Log("morreu");
         }
     }
 }

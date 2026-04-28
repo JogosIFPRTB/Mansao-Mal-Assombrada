@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 356790244}
   - component: {fileID: 356790243}
   - component: {fileID: 356790245}
+  - component: {fileID: 356790246}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1103,9 +1104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d8c091547607e45b7c3f1119ceabd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrocaCenas
-  JOGO1: SampleScene
-  jogo2: TESTE
-  jogo3: TESTE2
+  JOGO1: MiniGameFlappy
+  jogo2: ritmo
+  jogo3: MiniGameShoter
 --- !u!61 &356790245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1152,6 +1153,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &356790246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356790238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a660bb2977984264fa29fa524f8dcc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerOver
+  gameover: gameOver
 --- !u!1 &544344247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1178,8 @@ GameObject:
   - component: {fileID: 544344249}
   - component: {fileID: 544344248}
   - component: {fileID: 544344251}
-  - component: {fileID: 544344252}
+  - component: {fileID: 544344254}
+  - component: {fileID: 544344253}
   m_Layer: 0
   m_Name: palhaco
   m_TagString: Inimigo
@@ -1187,7 +1202,6 @@ MonoBehaviour:
   velocidade: 3
   aumentoDeVelo: 0.1
   Player: {fileID: 356790241}
-  gameover: gameOver
 --- !u!212 &544344249
 SpriteRenderer:
   serializedVersion: 2
@@ -1235,7 +1249,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1312,18 +1326,30 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 1
---- !u!195 &544344252
-NavMeshAgent:
+--- !u!114 &544344253
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544344247}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e39f6090724e4a4a8aadeb042afa2bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Extensions.AgentOverride2d
+--- !u!195 &544344254
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544344247}
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 6
+  m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
