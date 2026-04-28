@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class player : MonoBehaviour
 {
@@ -7,6 +8,11 @@ public class player : MonoBehaviour
     public InputAction input;
     private Rigidbody2D rb;
     private Vector2 movimento;
+    public TextMeshProUGUI textoPontosUI;
+    public TextMeshProUGUI textoVidasUI;
+    public int vidas = 3;
+    public int pontos = 0;
+
 
     private void Awake()
     {
@@ -18,6 +24,7 @@ public class player : MonoBehaviour
     void Update()
     {
         movimento = input.ReadValue<Vector2>();
+        atualizarUI();
     }
 
     // Update is called once per frame
@@ -25,5 +32,22 @@ public class player : MonoBehaviour
     {
         Vector2 dir = movimento.normalized;
         rb.linearVelocity = dir * velocidade;
+    }
+    void atualizarUI() {
+        textoPontosUI.text = "Pontos: " + pontos;
+        textoVidasUI.text = "Vidas: " + vidas;
+    }
+    void OnTriggerEnter2D(Collider2D colidiu)
+    {
+        if (colidiu.CompareTag("Inimigo"))
+        {
+            Debug.Log("Você colidiu com um inimigo, cuidado...");
+            vidas--;
+        }
+        if (colidiu.CompareTag("PontoF"))
+        {
+            Debug.Log("Você atingiu uma moeda, ganhaste pontos");
+            pontos = pontos + 100;
+        }
     }
 }
