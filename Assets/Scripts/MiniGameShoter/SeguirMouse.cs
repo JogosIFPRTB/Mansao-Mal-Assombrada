@@ -8,13 +8,13 @@ public class SeguirMouse : MonoBehaviour
     void Update()
     {
         Vector3 PosicaoMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //Pega o vector com relação a posição do mouse
+        //Pega o vector com relaï¿½ï¿½o a posiï¿½ï¿½o do mouse
 
         Vector3 direction = PosicaoMouse - transform.position;
-        // "Remove" o transform possition para o objeto não siga o objeto e fique parado
+        // "Remove" o transform possition para o objeto nï¿½o siga o objeto e fique parado
 
         float angulo = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        // Está definindo o angulo como float, com o Mathf.Atan2 * Mathf.Rad2Deg ele calcula o angulo em radianos e delvolve em graus
+        // Estï¿½ definindo o angulo como float, com o Mathf.Atan2 * Mathf.Rad2Deg ele calcula o angulo em radianos e delvolve em graus
 
         transform.rotation = Quaternion.Euler(0f, 0f, angulo);
 
