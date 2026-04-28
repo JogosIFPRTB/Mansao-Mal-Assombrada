@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 520513207}
   - component: {fileID: 520513206}
   m_Layer: 5
-  m_Name: Vida
+  m_Name: textoVidas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Vidas:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -339,6 +339,10 @@ MonoBehaviour:
       m_Action: Input
       m_Flags: 8
     m_Flags: 0
+  textoPontosUI: {fileID: 1372733678}
+  textoVidasUI: {fileID: 520513206}
+  vidas: 3
+  pontos: 0
 --- !u!212 &698495895
 SpriteRenderer:
   serializedVersion: 2
@@ -589,7 +593,7 @@ GameObject:
   - component: {fileID: 1372733679}
   - component: {fileID: 1372733678}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: textoPontos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -938,7 +942,7 @@ Transform:
   m_GameObject: {fileID: 1688313840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: 4.7, z: 0}
+  m_LocalPosition: {x: -2.53, y: -0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1003,9 +1007,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InimigoCai
   velocidade: 5
-  limiteInferior: -4
-  spawnY: 4
-  limiteX: 3.5
+  limiteInferior: -6
+  spawnY: 6
+  limiteX: 6
 --- !u!1 &1696733127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1044,7 @@ MonoBehaviour:
   velocidade: 5
   limiteInferior: -6
   spawnY: 6
-  limiteX: 8
+  limiteX: 6
 --- !u!212 &1696733129
 SpriteRenderer:
   serializedVersion: 2
@@ -1109,7 +1113,7 @@ Transform:
   m_GameObject: {fileID: 1696733127}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.82, y: 2.78, z: 0}
+  m_LocalPosition: {x: 2.62, y: -1.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

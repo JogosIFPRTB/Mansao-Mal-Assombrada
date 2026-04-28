@@ -1,3 +1,4 @@
+using Mono.Cecil;
 using UnityEngine;
 
 public class SpawnInimigo : MonoBehaviour
@@ -12,7 +13,7 @@ public class SpawnInimigo : MonoBehaviour
         TempoDeSpawn += Time.deltaTime;
         if (TempoDeSpawn >= 2f)
         {
-            Instantiate(PrefabInimigo, spawnInimigo.position, spawnInimigo.rotation);
+            GameObject inimigo = Instantiate(PrefabInimigo, spawnInimigo.position, spawnInimigo.rotation);
             TempoDeSpawn = 0f;
         }
     }
