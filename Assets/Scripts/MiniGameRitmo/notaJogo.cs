@@ -15,7 +15,7 @@ public class notaJogo : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !washit)
+        if (Input.GetKeyDown(KeyCode.A) && !washit)
         {
             checkHit();
         }
