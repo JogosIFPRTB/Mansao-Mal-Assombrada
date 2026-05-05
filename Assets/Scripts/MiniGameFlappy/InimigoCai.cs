@@ -9,6 +9,7 @@ public class InimigoCai : MonoBehaviour
     public float limiteInferior = -6f;
     public float spawnY = 6f;
     public float limiteX = 6f;
+    public float spawnTime = 2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Awake()
@@ -26,33 +27,20 @@ public class InimigoCai : MonoBehaviour
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
 
         // 2. Checa se ele passou do limite de baixo
-        if (transform.position.y < limiteInferior)
-        {
-            Respawn();
-        }
         if (transform.position.x == limiteMin.x) {
-            ResetarPosicao();
+            Destroy(gameObject);
         };
-        void Respawn()
-        {
-            // 3. Sorteia um X aleatório entre a esquerda e a direita
-            float xAleatorio = Random.Range(-limiteX, limiteX);
-
-            // 4. Aplica a nova posição (Cria um novo Vector3)
-            transform.position = new Vector3(xAleatorio, spawnY, 0);
-        }
+       
     }
     private void DefinirLimites()
     {
         if (!limitesDefinidos)
         {
-            limiteMin = new Vector2(-6.5f,-4.5f);  // Canto inferior esquerdo
-            limiteMax = new Vector2(6.5f, 3.5f);   // Canto superior direito
+            limiteMin = new Vector2(-5.5f,-4.5f);  // Canto inferior esquerdo
+            limiteMax = new Vector2(5.5f, 4.5f);   // Canto superior direito
             limitesDefinidos = true;
         }
     }
-    public static Vector2 ResetarPosicao()
-    {
-        return new Vector2(Random.Range(limiteMin.x, limiteMax.x), limiteMax.y);
-    }
+ 
 }
+
