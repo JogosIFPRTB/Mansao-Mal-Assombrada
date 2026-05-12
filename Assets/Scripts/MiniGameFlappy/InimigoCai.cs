@@ -24,6 +24,7 @@ public class InimigoCai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Destroy(gameObject, 2.5f);
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
 
         // 2. Checa se ele passou do limite de baixo
@@ -41,6 +42,12 @@ public class InimigoCai : MonoBehaviour
             limitesDefinidos = true;
         }
     }
- 
+    void OnTriggerEnter2D(Collider2D colidiu)
+    {
+        if (colidiu.CompareTag("Player"))
+        {
+           Destroy(gameObject) ;
+        }
+    }
 }
 
