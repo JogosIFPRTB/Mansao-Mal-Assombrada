@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Porta1
+  - PontoF
+  - Inimigo
+  - Porta2
+  - Porta3
+>>>>>>> 5093d2c62f5c353229c2d86700bcacf8dfbb27b6
   layers:
   - Default
   - TransparentFX

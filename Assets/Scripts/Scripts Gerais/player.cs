@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class player : MonoBehaviour
 {
     public float velocidade = 4f;
     public InputAction input;
     private Rigidbody2D rb;
     private Vector2 movimento;
+    public int vidas = 3;
+
 
     private void Awake()
     {
@@ -26,4 +27,5 @@ public class player : MonoBehaviour
         Vector2 dir = movimento.normalized;
         rb.linearVelocity = dir * velocidade;
     }
+    
 }
