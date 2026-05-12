@@ -71,10 +71,12 @@ public class PlayerMusica : MonoBehaviour
         //    TocarAudioFinal(somVitoria);
         //}
 
+        /*
         if (scriptDoPlayer.pontos >= pontosParaVencer)
         {
             TocarAudioFinal(somVitoria);
         }
+        */
 
         // Lógica de DERROTA (Lendo a vida do player)
         if (scriptDoPlayer != null && scriptDoPlayer.vidas <= 0)
