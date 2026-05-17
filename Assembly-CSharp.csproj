@@ -43,7 +43,6 @@
     <UnityVersion>6000.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -52,14 +51,27 @@
     <Compile Include="Assets\Sprites\drp.cs" />
     <Compile Include="Assets\Scripts\Telas\TrocaTelas.cs" />
     <Compile Include="Assets\Scripts\MiniGameFlappy\InimigoCai.cs" />
-    <Compile Include="Assets\Scripts\MiniGameFlappy\ColisorPlayer.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\Tiro.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\player.cs" />
-    <Compile Include="Assets\Scripts\gamertime.cs" />
+    <Compile Include="Assets\Scripts\ScriptCutScene\MusicasCutScenes.cs" />
     <Compile Include="Assets\Scripts\movimento.cs" />
+    <Compile Include="Assets\Sprites\Player\Scripts\Movimentação.cs" />
+    <Compile Include="Assets\Scripts\MiniGameFlappy\TargetSpawner.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\Spawner.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\Cronometro.cs" />
-    <Compile Include="Assets\Scripts\Persguidor.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\InimigoSeguir.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\AmmoSpawner.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\SeguirMouse.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\Arma.cs" />
+    <Compile Include="Assets\Scripts\Scripts Gerais\PlayerOver.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\TrocaCenas.cs" />
-    <Compile Include="Assets\Scripts\notaJogo.cs" />
+    <Compile Include="Assets\Scripts\palhaco\Persguidor.cs" />
+    <Compile Include="Assets\Scripts\MiniGameRitmo\gamertime.cs" />
+    <Compile Include="Assets\Scripts\Scripts Gerais\PlayerMusica.cs" />
+    <Compile Include="Assets\Scripts\MiniGameRitmo\notaJogo.cs" />
+    <Compile Include="Assets\Scripts\Scripts Gerais\gameOver.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\CursorCustom.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\PegarAmmo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -647,14 +659,6 @@
       <HintPath>Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
       <Private>False</Private>
@@ -1175,6 +1179,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
@@ -1203,12 +1211,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PPv2URPConverters">
@@ -1265,6 +1281,10 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Aseprite.Editor">
@@ -1421,6 +1441,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshPlus.csproj" />
+    <ProjectReference Include="NavMeshPlusEditor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
