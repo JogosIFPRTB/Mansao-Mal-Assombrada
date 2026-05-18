@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class MusicasCutScenes : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource somSource;
+    [SerializeField] private AudioClip somEfeito;
 
-    // Update is called once per frame
-    void Update()
+    // Esta função será chamada diretamente pela animação
+    public void TocarSomEfeito()
     {
-        
+        if (somSource != null && somEfeito != null)
+        {
+            somSource.PlayOneShot(somEfeito);
+        }
     }
 }
