@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
 using TMPro;
 
 public class Arma : MonoBehaviour
@@ -9,27 +8,40 @@ public class Arma : MonoBehaviour
     public TextMeshProUGUI municao;
 
     public int Municao = 10;
-    public int MunicaoAtual;
+    private int MunicaoAtual;
+
     void Start()
     {
-        MunicaoAtual = Municao;  
+        MunicaoAtual = Municao;
+        AtualizarMuni();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || MunicaoAtual > 0)
+        // Só atira se apertar espaço E tiver munição
+        if (Input.GetKeyDown(KeyCode.Space) && MunicaoAtual > 0)
         {
             Instantiate(PrefabBala, SpawnBala.position, SpawnBala.rotation);
+
             MunicaoAtual--;
+
             AtualizarMuni();
         }
-        if (MunicaoAtual <= 0)
-        {
-            return;
-        }
     }
+
+    public void AdicionarMunicao(int quantidade)
+    {
+        MunicaoAtual += quantidade;
+        // Limite máximo
+        if (MunicaoAtual > Municao)
+        {
+            MunicaoAtual = Municao;
+        }
+        AtualizarMuni();
+    }
+
     void AtualizarMuni()
     {
-        municao.text = MunicaoAtual.ToString() + "/" + Municao.ToString();
+        municao.text = MunicaoAtual + "/" + Municao;
     }
 }
