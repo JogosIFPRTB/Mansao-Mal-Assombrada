@@ -17,15 +17,14 @@ public class PlayerMusica : MonoBehaviour
     [Header("Sons de Resultado")]
     public AudioClip somVitoria;
     public AudioClip somDerrota;
-    public int pontosParaVencer = 500;
 
     private bool somFinalTocado = false;
-    private player scriptDoPlayer; // Referência ao seu script do player
+    private player scriptDoPlayer;
+    public Cronometro scriptDoCronometro;
 
     void Awake()
     {
-        // Garante que o som não pare ao mudar de cena (Singleton)
-        if (FindObjectsOfType<PlayerMusica>().Length > 1)
+        if (FindObjectsByType<PlayerMusica>(FindObjectsSortMode.None).Length > 1)
         {
             Destroy(gameObject);
             return;
@@ -46,11 +45,9 @@ public class PlayerMusica : MonoBehaviour
     void AoCarregarCena(Scene cena, LoadSceneMode modo)
     {
         somFinalTocado = false;
+        scriptDoPlayer = FindFirstObjectByType<player>();
+        scriptDoCronometro = FindFirstObjectByType<Cronometro>();
 
-        // Busca o script do player na nova cena
-        scriptDoPlayer = FindObjectOfType<player>();
-
-        // Verifica se a nova cena tem uma música na lista
         foreach (var config in minigames)
         {
             if (config.nomeDaCena == cena.name)
@@ -65,20 +62,13 @@ public class PlayerMusica : MonoBehaviour
     {
         if (somFinalTocado) return;
 
-        //// Lógica de VITÓRIA (Lendo o tempo static do seu script Cronometro)
-        //if (Cronometro.tempo <= 0)
-        //{
-        //    TocarAudioFinal(somVitoria);
-        //}
-
-        /*
-        if (scriptDoPlayer.pontos >= pontosParaVencer)
+        // CONDIÇÃO ÚNICA DE VITÓRIA: Tempo chegou a zero
+        if (scriptDoCronometro != null && scriptDoCronometro.tempo <= 0)
         {
             TocarAudioFinal(somVitoria);
         }
-        */
 
-        // Lógica de DERROTA (Lendo a vida do player)
+        // Lógica de DERROTA: Vidas do player chegaram a zero
         if (scriptDoPlayer != null && scriptDoPlayer.vidas <= 0)
         {
             TocarAudioFinal(somDerrota);
@@ -88,7 +78,8 @@ public class PlayerMusica : MonoBehaviour
     void TocarAudioFinal(AudioClip clip)
     {
         somFinalTocado = true;
-        TocarAudio(clip, false); // Toca o som de fim sem loop
+        emissorSom.pitch = 1f;
+        TocarAudio(clip, false);
     }
 
     void TocarAudio(AudioClip clip, bool loop)
