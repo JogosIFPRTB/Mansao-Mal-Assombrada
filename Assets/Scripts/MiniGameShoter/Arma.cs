@@ -6,6 +6,7 @@ public class Arma : MonoBehaviour
     public GameObject PrefabBala;
     public Transform SpawnBala;
     public TextMeshProUGUI municao;
+    public AudioSource tiro;
 
     public int Municao = 10;
     private int MunicaoAtual;
@@ -21,6 +22,8 @@ public class Arma : MonoBehaviour
         // Só atira se apertar espaço E tiver munição
         if (Input.GetKeyDown(KeyCode.Space) && MunicaoAtual > 0)
         {
+            tiro.Play();
+
             Instantiate(PrefabBala, SpawnBala.position, SpawnBala.rotation);
 
             MunicaoAtual--;
