@@ -1,5 +1,6 @@
 using Mono.Cecil.Cil;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class notaJogo : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class notaJogo : MonoBehaviour
     public float acerta = 0.25f;
     private bool washit = false;
     private SpriteRenderer sr;
+    public string KeyCode;
 
     private void Start()
     {
@@ -15,7 +17,7 @@ public class notaJogo : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) && !washit)
+        if (Input.GetKeyDown(KeyCode) && !washit)
         {
             checkHit();
         }
