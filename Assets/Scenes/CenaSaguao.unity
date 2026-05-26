@@ -1297,7 +1297,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Persguidor
   velocidade: 3
   aumentoDeVelo: 0.1
+  MaximoDeVelo: 3
+  TempoAgora: 0
   Player: {fileID: 356790241}
+  targetPoint: {fileID: 0}
 --- !u!212 &544344249
 SpriteRenderer:
   serializedVersion: 2

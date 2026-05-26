@@ -4,14 +4,11 @@ using TMPro;
 public class Cronometro : MonoBehaviour
 {
     // REMOVIDO O STATIC: Agora o tempo pertence a este GameObject específico
-    public float tempo = 15f;
+    [SerializeField]
+    public float tempo;
     public TMP_Text textoCronometro;
 
-    void Start()
-    {
-        tempo = 15f;
-    }
-
+   
     void Update()
     {
         if (tempo > 0)
@@ -34,6 +31,6 @@ public class Cronometro : MonoBehaviour
     // Função pública para caso você queira resetar o cronômetro manualmente depois
     public void ReiniciarCronometro()
     {
-        tempo = 15f;
+       //tempo = 15f;
     }
 }
