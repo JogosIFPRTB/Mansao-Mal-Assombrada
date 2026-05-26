@@ -23,7 +23,7 @@ public class Movimentação : MonoBehaviour
 
         if (direction.x != 0)
         {
-            anim.SetLayerWeight(0, 0);
+            ResetLayers();
             anim.SetLayerWeight(2, 1);
 
             if (direction.x < 0)
@@ -35,12 +35,31 @@ public class Movimentação : MonoBehaviour
             }
         }
 
+        if (direction.y > 0 && direction.x == 0)
+        {
+            ResetLayers();
+            anim.SetLayerWeight(1, 1);
+        }
+
+        if (direction.y < 0 && direction.x == 0)
+        {
+            ResetLayers();
+            anim.SetLayerWeight(0, 1);
+        }
+
         if (direction != Vector2.zero)
         {
-            anim.SetBool("walking", false);
+            anim.SetBool("Andando", true);
         } else
         {
-            anim.SetBool("walking", true);
+            anim.SetBool("Andando", false);
         }
+    }
+
+    private void ResetLayers()
+    {
+        anim.SetLayerWeight(0, 0);
+        anim.SetLayerWeight(1, 0);
+        anim.SetLayerWeight(2, 0);
     }
 }

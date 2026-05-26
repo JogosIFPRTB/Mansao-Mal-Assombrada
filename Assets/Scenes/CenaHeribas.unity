@@ -930,6 +930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950bcd5e87955ed4e9bc30693d654d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cronometro
+  tempo: 15
+  textoCronometro: {fileID: 0}
 --- !u!212 &356790240
 SpriteRenderer:
   serializedVersion: 2
@@ -1259,7 +1261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 992028ec53d884646bf2c201ba3dd372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Movimenta\xE7\xE3o"
-  Speed: 0
+  Speed: 3.5
 --- !u!1 &544344247
 GameObject:
   m_ObjectHideFlags: 0
