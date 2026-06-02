@@ -9,7 +9,7 @@ public class InimigoCai : MonoBehaviour
     public float limiteInferior = -6f;
     public float spawnY = 6f;
     public float limiteX = 6f;
-    public float spawnTime = 2f;
+    public float spawnTime = 3.5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Awake()

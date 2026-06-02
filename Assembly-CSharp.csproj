@@ -49,18 +49,20 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Sprites\drp.cs" />
     <Compile Include="Assets\Scripts\Telas\TrocaTelas.cs" />
     <Compile Include="Assets\Scripts\MiniGameFlappy\InimigoCai.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\Tiro.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\player.cs" />
     <Compile Include="Assets\Scripts\ScriptCutScene\MusicasCutScenes.cs" />
+    <Compile Include="Assets\Scripts\MiniGameFlappy\ChaoMov.cs" />
+    <Compile Include="Assets\Sprites\Player\Scripts\SonsDePassos2D.cs" />
     <Compile Include="Assets\Scripts\movimento.cs" />
     <Compile Include="Assets\Sprites\Player\Scripts\Movimentação.cs" />
     <Compile Include="Assets\Scripts\MiniGameFlappy\TargetSpawner.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\Spawner.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\Cronometro.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\InimigoSeguir.cs" />
+    <Compile Include="Assets\Sprites\Mini_game1_objetos\Tremer.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\AmmoSpawner.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\SeguirMouse.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\Arma.cs" />
@@ -70,7 +72,6 @@
     <Compile Include="Assets\Scripts\Scripts Gerais\PlayerMusica.cs" />
     <Compile Include="Assets\Scripts\MiniGameRitmo\notaJogo.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\gameOver.cs" />
-    <Compile Include="Assets\Mini_game1_objetos\Tremer.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\CursorCustom.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\PegarAmmo.cs" />
   </ItemGroup>

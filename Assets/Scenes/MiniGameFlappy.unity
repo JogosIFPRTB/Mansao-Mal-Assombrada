@@ -452,10 +452,7 @@ MonoBehaviour:
       m_Action: Input
       m_Flags: 8
     m_Flags: 0
-  textoPontosUI: {fileID: 1372733678}
-  textoVidasUI: {fileID: 520513206}
   vidas: 3
-  pontos: 0
 --- !u!212 &698495895
 SpriteRenderer:
   serializedVersion: 2
