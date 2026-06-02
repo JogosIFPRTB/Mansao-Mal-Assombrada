@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 12246d39795362e4283bdb56d0fe3031
+guid: 86552a7e3cfc0b54d90679917f86932e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3721702760262653379
-    second: balao_amarelo_basico_0
+      213: 6162153306085410120
+    second: balao_azur_0
   - first:
-      213: -649279252670512719
-    second: balao_amarelo_basico_1
+      213: 2213918194503598794
+    second: balao_azur_1
   - first:
-      213: 1625719652871440828
-    second: balao_amarelo_basico_2
+      213: 8816153194228962093
+    second: balao_azur_2
   - first:
-      213: 6298437830750309366
-    second: balao_amarelo_basico_3
+      213: 9222069490487309687
+    second: balao_azur_3
   - first:
-      213: 4520403746784237503
-    second: balao_amarelo_basico_4
+      213: -1802585772322539936
+    second: balao_azur_4
   - first:
-      213: 2718225569596153771
-    second: balao_amarelo_basico_5
+      213: 2077710611439411007
+    second: balao_azur_5
   - first:
-      213: 2015021250472906207
-    second: balao_amarelo_basico_6
+      213: -2544448559988727154
+    second: balao_azur_6
   - first:
-      213: 7333679111337253413
-    second: balao_amarelo_basico_7
+      213: -2504808710332520960
+    second: balao_azur_7
   - first:
-      213: -1765051184694235203
-    second: balao_amarelo_basico_8
+      213: -3508100489748354560
+    second: balao_azur_8
   - first:
-      213: 6954510046595065861
-    second: balao_amarelo_basico_9
+      213: -7016460488410808287
+    second: balao_azur_9
   - first:
-      213: -370324586006767282
-    second: balao_amarelo_basico_10
+      213: 4309029131920112279
+    second: balao_azur_10
   - first:
-      213: 2501546234839547855
-    second: balao_amarelo_basico_11
+      213: 3515102438815361976
+    second: balao_azur_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -159,7 +159,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: balao_amarelo_basico_0
+      name: balao_azur_0
       rect:
         serializedVersion: 2
         x: 18
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3a24f6de0bd95cc0800000000000000
-      internalID: -3721702760262653379
+      spriteID: 84548bc88cd548550800000000000000
+      internalID: 6162153306085410120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_1
+      name: balao_azur_1
       rect:
         serializedVersion: 2
         x: 49
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b10b80b5fb4df6f0800000000000000
-      internalID: -649279252670512719
+      spriteID: ac249293eda69be10800000000000000
+      internalID: 2213918194503598794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_2
+      name: balao_azur_2
       rect:
         serializedVersion: 2
         x: 80
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb906cd2967bf8610800000000000000
-      internalID: 1625719652871440828
+      spriteID: d235173ce94495a70800000000000000
+      internalID: 8816153194228962093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_3
+      name: balao_azur_3
       rect:
         serializedVersion: 2
         x: 110
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fb01c526db886750800000000000000
-      internalID: 6298437830750309366
+      spriteID: 775b67a475f5bff70800000000000000
+      internalID: 9222069490487309687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_4
+      name: balao_azur_4
       rect:
         serializedVersion: 2
         x: 140
@@ -262,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb75b60f143bbbe30800000000000000
-      internalID: 4520403746784237503
+      spriteID: 066ba836acdebf6e0800000000000000
+      internalID: -1802585772322539936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_5
+      name: balao_azur_5
       rect:
         serializedVersion: 2
         x: 170
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baf9927f0c319b520800000000000000
-      internalID: 2718225569596153771
+      spriteID: f3fd7ecfac285dc10800000000000000
+      internalID: 2077710611439411007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_6
+      name: balao_azur_6
       rect:
         serializedVersion: 2
         x: 200
@@ -306,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdd0d49b62bc6fb10800000000000000
-      internalID: 2015021250472906207
+      spriteID: e822e98048d40bcd0800000000000000
+      internalID: -2544448559988727154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_7
+      name: balao_azur_7
       rect:
         serializedVersion: 2
         x: 229
@@ -328,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52a95f7db4676c560800000000000000
-      internalID: 7333679111337253413
+      spriteID: 006635ebfb12d3dd0800000000000000
+      internalID: -2504808710332520960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_8
+      name: balao_azur_8
       rect:
         serializedVersion: 2
         x: 260
@@ -350,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbfeae59c474187e0800000000000000
-      internalID: -1765051184694235203
+      spriteID: 00aec28f039b05fc0800000000000000
+      internalID: -3508100489748354560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_9
+      name: balao_azur_9
       rect:
         serializedVersion: 2
         x: 291
@@ -372,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5082f227a02638060800000000000000
-      internalID: 6954510046595065861
+      spriteID: 120c5bf4c5680ae90800000000000000
+      internalID: -7016460488410808287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_10
+      name: balao_azur_10
       rect:
         serializedVersion: 2
         x: 321
@@ -394,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e49197740c75cdaf0800000000000000
-      internalID: -370324586006767282
+      spriteID: 79a78ee4a2fbccb30800000000000000
+      internalID: 4309029131920112279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_11
+      name: balao_azur_11
       rect:
         serializedVersion: 2
         x: 351
@@ -416,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcfb3dcfb0747b220800000000000000
-      internalID: 2501546234839547855
+      spriteID: 8bbe2b65b0728c030800000000000000
+      internalID: 3515102438815361976
       vertices: []
       indices: 
       edges: []
@@ -436,18 +436,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      balao_amarelo_basico_0: -3721702760262653379
-      balao_amarelo_basico_1: -649279252670512719
-      balao_amarelo_basico_10: -370324586006767282
-      balao_amarelo_basico_11: 2501546234839547855
-      balao_amarelo_basico_2: 1625719652871440828
-      balao_amarelo_basico_3: 6298437830750309366
-      balao_amarelo_basico_4: 4520403746784237503
-      balao_amarelo_basico_5: 2718225569596153771
-      balao_amarelo_basico_6: 2015021250472906207
-      balao_amarelo_basico_7: 7333679111337253413
-      balao_amarelo_basico_8: -1765051184694235203
-      balao_amarelo_basico_9: 6954510046595065861
+      balao_azur_0: 6162153306085410120
+      balao_azur_1: 2213918194503598794
+      balao_azur_10: 4309029131920112279
+      balao_azur_11: 3515102438815361976
+      balao_azur_2: 8816153194228962093
+      balao_azur_3: 9222069490487309687
+      balao_azur_4: -1802585772322539936
+      balao_azur_5: 2077710611439411007
+      balao_azur_6: -2544448559988727154
+      balao_azur_7: -2504808710332520960
+      balao_azur_8: -3508100489748354560
+      balao_azur_9: -7016460488410808287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
