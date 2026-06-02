@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7718502073132519066}
   - component: {fileID: 8000818916485966735}
   - component: {fileID: 1387524102399524861}
-  - component: {fileID: -8562177020334586325}
+  - component: {fileID: -1186486523692436994}
   m_Layer: 0
   m_Name: Muni
   m_TagString: Untagged
@@ -81,9 +81,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -2829398003576741372, guid: b80e0bdb301f795408f1c8486169ba28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,7 +129,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &-8562177020334586325
+--- !u!114 &-1186486523692436994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
