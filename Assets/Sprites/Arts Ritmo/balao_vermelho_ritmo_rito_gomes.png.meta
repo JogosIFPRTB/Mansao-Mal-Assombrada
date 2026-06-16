@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 12246d39795362e4283bdb56d0fe3031
+guid: 3ac1ca0fd1eca1547b1c605d3a3d31f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3721702760262653379
-    second: balao_amarelo_basico_0
+      213: 9027240251122819734
+    second: balao_vermelho_ritmo_rito_gomes_0
   - first:
-      213: -649279252670512719
-    second: balao_amarelo_basico_1
+      213: -5390686166623018933
+    second: balao_vermelho_ritmo_rito_gomes_1
   - first:
-      213: 1625719652871440828
-    second: balao_amarelo_basico_2
+      213: 2625431267988850905
+    second: balao_vermelho_ritmo_rito_gomes_2
   - first:
-      213: 6298437830750309366
-    second: balao_amarelo_basico_3
+      213: -5031816868447410706
+    second: balao_vermelho_ritmo_rito_gomes_3
   - first:
-      213: 4520403746784237503
-    second: balao_amarelo_basico_4
+      213: 7918559541169618596
+    second: balao_vermelho_ritmo_rito_gomes_4
   - first:
-      213: 2718225569596153771
-    second: balao_amarelo_basico_5
+      213: 6600539314965788425
+    second: balao_vermelho_ritmo_rito_gomes_5
   - first:
-      213: 2015021250472906207
-    second: balao_amarelo_basico_6
+      213: -3331202999960648774
+    second: balao_vermelho_ritmo_rito_gomes_6
   - first:
-      213: 7333679111337253413
-    second: balao_amarelo_basico_7
+      213: 6476767180924257058
+    second: balao_vermelho_ritmo_rito_gomes_7
   - first:
-      213: -1765051184694235203
-    second: balao_amarelo_basico_8
+      213: 1789047573424771616
+    second: balao_vermelho_ritmo_rito_gomes_8
   - first:
-      213: 6954510046595065861
-    second: balao_amarelo_basico_9
+      213: -4459168665688122230
+    second: balao_vermelho_ritmo_rito_gomes_9
   - first:
-      213: -370324586006767282
-    second: balao_amarelo_basico_10
+      213: -4389895615817680458
+    second: balao_vermelho_ritmo_rito_gomes_10
   - first:
-      213: 2501546234839547855
-    second: balao_amarelo_basico_11
+      213: 4886076272998531113
+    second: balao_vermelho_ritmo_rito_gomes_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -159,7 +159,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: balao_amarelo_basico_0
+      name: balao_vermelho_ritmo_rito_gomes_0
       rect:
         serializedVersion: 2
         x: 18
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3a24f6de0bd95cc0800000000000000
-      internalID: -3721702760262653379
+      spriteID: 692a8461e23374d70800000000000000
+      internalID: 9027240251122819734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_1
+      name: balao_vermelho_ritmo_rito_gomes_1
       rect:
         serializedVersion: 2
         x: 49
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b10b80b5fb4df6f0800000000000000
-      internalID: -649279252670512719
+      spriteID: b40a2d61e7f6035b0800000000000000
+      internalID: -5390686166623018933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_2
+      name: balao_vermelho_ritmo_rito_gomes_2
       rect:
         serializedVersion: 2
         x: 80
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb906cd2967bf8610800000000000000
-      internalID: 1625719652871440828
+      spriteID: 9d8cdaef3d76f6420800000000000000
+      internalID: 2625431267988850905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_3
+      name: balao_vermelho_ritmo_rito_gomes_3
       rect:
         serializedVersion: 2
         x: 110
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fb01c526db886750800000000000000
-      internalID: 6298437830750309366
+      spriteID: ee5af55c7356b2ab0800000000000000
+      internalID: -5031816868447410706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_4
+      name: balao_vermelho_ritmo_rito_gomes_4
       rect:
         serializedVersion: 2
         x: 140
@@ -262,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb75b60f143bbbe30800000000000000
-      internalID: 4520403746784237503
+      spriteID: 4aef138c2ff54ed60800000000000000
+      internalID: 7918559541169618596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_5
+      name: balao_vermelho_ritmo_rito_gomes_5
       rect:
         serializedVersion: 2
         x: 170
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baf9927f0c319b520800000000000000
-      internalID: 2718225569596153771
+      spriteID: 907398a2983d99b50800000000000000
+      internalID: 6600539314965788425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_6
+      name: balao_vermelho_ritmo_rito_gomes_6
       rect:
         serializedVersion: 2
         x: 200
@@ -306,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdd0d49b62bc6fb10800000000000000
-      internalID: 2015021250472906207
+      spriteID: ab341a0658035c1d0800000000000000
+      internalID: -3331202999960648774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_7
+      name: balao_vermelho_ritmo_rito_gomes_7
       rect:
         serializedVersion: 2
         x: 229
@@ -328,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52a95f7db4676c560800000000000000
-      internalID: 7333679111337253413
+      spriteID: 22306e78f6912e950800000000000000
+      internalID: 6476767180924257058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_8
+      name: balao_vermelho_ritmo_rito_gomes_8
       rect:
         serializedVersion: 2
         x: 260
@@ -350,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbfeae59c474187e0800000000000000
-      internalID: -1765051184694235203
+      spriteID: 022124c0a49f3d810800000000000000
+      internalID: 1789047573424771616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_9
+      name: balao_vermelho_ritmo_rito_gomes_9
       rect:
         serializedVersion: 2
         x: 291
@@ -372,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5082f227a02638060800000000000000
-      internalID: 6954510046595065861
+      spriteID: a8c5b1869b9dd12c0800000000000000
+      internalID: -4459168665688122230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_10
+      name: balao_vermelho_ritmo_rito_gomes_10
       rect:
         serializedVersion: 2
         x: 321
@@ -394,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e49197740c75cdaf0800000000000000
-      internalID: -370324586006767282
+      spriteID: 6b974223235f313c0800000000000000
+      internalID: -4389895615817680458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: balao_amarelo_basico_11
+      name: balao_vermelho_ritmo_rito_gomes_11
       rect:
         serializedVersion: 2
         x: 351
@@ -416,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcfb3dcfb0747b220800000000000000
-      internalID: 2501546234839547855
+      spriteID: 920ca859b74dec340800000000000000
+      internalID: 4886076272998531113
       vertices: []
       indices: 
       edges: []
@@ -436,18 +436,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      balao_amarelo_basico_0: -3721702760262653379
-      balao_amarelo_basico_1: -649279252670512719
-      balao_amarelo_basico_10: -370324586006767282
-      balao_amarelo_basico_11: 2501546234839547855
-      balao_amarelo_basico_2: 1625719652871440828
-      balao_amarelo_basico_3: 6298437830750309366
-      balao_amarelo_basico_4: 4520403746784237503
-      balao_amarelo_basico_5: 2718225569596153771
-      balao_amarelo_basico_6: 2015021250472906207
-      balao_amarelo_basico_7: 7333679111337253413
-      balao_amarelo_basico_8: -1765051184694235203
-      balao_amarelo_basico_9: 6954510046595065861
+      balao_vermelho_ritmo_rito_gomes_0: 9027240251122819734
+      balao_vermelho_ritmo_rito_gomes_1: -5390686166623018933
+      balao_vermelho_ritmo_rito_gomes_10: -4389895615817680458
+      balao_vermelho_ritmo_rito_gomes_11: 4886076272998531113
+      balao_vermelho_ritmo_rito_gomes_2: 2625431267988850905
+      balao_vermelho_ritmo_rito_gomes_3: -5031816868447410706
+      balao_vermelho_ritmo_rito_gomes_4: 7918559541169618596
+      balao_vermelho_ritmo_rito_gomes_5: 6600539314965788425
+      balao_vermelho_ritmo_rito_gomes_6: -3331202999960648774
+      balao_vermelho_ritmo_rito_gomes_7: 6476767180924257058
+      balao_vermelho_ritmo_rito_gomes_8: 1789047573424771616
+      balao_vermelho_ritmo_rito_gomes_9: -4459168665688122230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
