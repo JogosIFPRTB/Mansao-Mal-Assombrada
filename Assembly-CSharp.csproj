@@ -58,6 +58,7 @@
     <Compile Include="Assets\Sprites\Player\Scripts\SonsDePassos2D.cs" />
     <Compile Include="Assets\Scripts\movimento.cs" />
     <Compile Include="Assets\Sprites\Player\Scripts\Movimentação.cs" />
+    <Compile Include="Assets\Scripts\MiniGameShoter\ShooterVida.cs" />
     <Compile Include="Assets\Scripts\MiniGameFlappy\TargetSpawner.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\Spawner.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\Cronometro.cs" />
