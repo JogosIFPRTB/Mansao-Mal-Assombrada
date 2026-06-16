@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5caef559a78b90d40bffe3c06ca2bfa8
+guid: b4016587381031645a3dc02bd2cf6544
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5715141635434162714
-    second: coisa fundo_0
+      213: 8888971192493654158
+    second: CELTAA_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coisa fundo_0
+      name: CELTAA_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 688
+        width: 290
+        height: 174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1a291d8903405f40800000000000000
-      internalID: 5715141635434162714
+      spriteID: e80c34b2438fb5b70800000000000000
+      internalID: 8888971192493654158
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coisa fundo_0: 5715141635434162714
+      CELTAA_0: 8888971192493654158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
