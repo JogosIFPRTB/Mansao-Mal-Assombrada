@@ -24,7 +24,7 @@ public class InimigoCai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, 2.5f);
+        Destroy(gameObject, spawnTime);
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
 
         // 2. Checa se ele passou do limite de baixo
