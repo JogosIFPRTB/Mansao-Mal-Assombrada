@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes cenarios/concept mini game 1.unity
+    guid: a92fbce08026b9946ba635a8335047c6
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
