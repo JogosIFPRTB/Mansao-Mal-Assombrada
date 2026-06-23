@@ -10,7 +10,7 @@ public class gamertime : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(time >= 3f)
+        if(time >= 4f)
         {
             time = 0;
         }
