@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 50776896}
   - component: {fileID: 50776895}
   - component: {fileID: 50776898}
+  - component: {fileID: 50776900}
   - component: {fileID: 50776899}
   m_Layer: 0
   m_Name: ParedQueCai1
@@ -1789,7 +1790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50776893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d37458db16cc2e4b8299dc550b3e1f0, type: 3}
   m_Name: 
@@ -1837,6 +1838,23 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &50776900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50776893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee23aa03873d87c4db51e0eee3ac5070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Parede
+  velocidade: 1.5
+  limiteInferior: -6
+  spawnY: 6
+  limiteX: 6
+  spawnTime: 17.5
 --- !u!1 &78535022
 GameObject:
   m_ObjectHideFlags: 0
@@ -8355,6 +8373,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1214764555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214764556}
+  - component: {fileID: 1214764557}
+  m_Layer: 0
+  m_Name: Spawner_Ponto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1214764556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214764555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.20918, y: 10.36408, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214764557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214764555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c960f3e8fe80649a4abd3a4d01b1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JOSE
+  enemyPrefab: {fileID: 3875891692692462194, guid: bc9fbc3454f775e42b937e1dcf0f9329, type: 3}
+  spawnInterval: 2
 --- !u!1 &1225468497
 GameObject:
   m_ObjectHideFlags: 0
@@ -8443,6 +8507,7 @@ GameObject:
   - component: {fileID: 1291935814}
   - component: {fileID: 1291935813}
   - component: {fileID: 1291935812}
+  - component: {fileID: 1291935815}
   - component: {fileID: 1291935811}
   m_Layer: 0
   m_Name: ParedQueCai1 (1)
@@ -8511,7 +8576,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291935809}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d37458db16cc2e4b8299dc550b3e1f0, type: 3}
   m_Name: 
@@ -10149,6 +10214,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1291935815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291935809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee23aa03873d87c4db51e0eee3ac5070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Parede
+  velocidade: 1.5
+  limiteInferior: -6
+  spawnY: 6
+  limiteX: 6
+  spawnTime: 18
 --- !u!1 &1609513180
 GameObject:
   m_ObjectHideFlags: 0
@@ -10286,6 +10368,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609513180}
   m_CullTransparentMesh: 1
+--- !u!1 &1841729641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841729642}
+  - component: {fileID: 1841729643}
+  m_Layer: 0
+  m_Name: Spawner_Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1841729642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841729641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.20918, y: 10.36408, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841729643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841729641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c960f3e8fe80649a4abd3a4d01b1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JOSE
+  enemyPrefab: {fileID: 6052642261291952134, guid: 4ccebd644c5e55646a2ce8aeb5508033, type: 3}
+  spawnInterval: 2
 --- !u!1 &1870971508
 GameObject:
   m_ObjectHideFlags: 0
@@ -10843,3 +10971,5 @@ SceneRoots:
   - {fileID: 578224571}
   - {fileID: 1870971511}
   - {fileID: 1213450831}
+  - {fileID: 1841729642}
+  - {fileID: 1214764556}

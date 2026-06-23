@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InimigoCai : MonoBehaviour
+public class Parede : MonoBehaviour
 {
     private static Vector2 limiteMin;
     private static Vector2 limiteMax;
@@ -10,6 +10,7 @@ public class InimigoCai : MonoBehaviour
     public float spawnY = 6f;
     public float limiteX = 6f;
     public float spawnTime = 3.5f;
+    private Vector2 PosInit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Awake()
@@ -18,26 +19,29 @@ public class InimigoCai : MonoBehaviour
     }
     void Start()
     {
+        PosInit = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, spawnTime);
+
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
 
         // 2. Checa se ele passou do limite de baixo
-        if (transform.position.x == limiteMin.x) {
-            Destroy(gameObject);
-        };
-       
+        if (transform.position.y < limiteMin.y)
+        {
+            transform.position = PosInit ;
+        }
+        ;
+
     }
     private void DefinirLimites()
     {
         if (!limitesDefinidos)
         {
-            limiteMin = new Vector2(-5.5f,-4.5f);  // Canto inferior esquerdo
-            limiteMax = new Vector2(5.5f, 4.5f);   // Canto superior direito
+            limiteMin = new Vector2(-7f, -8.5f);  // Canto inferior esquerdo
+            limiteMax = new Vector2(5.5f, 9.5f);   // Canto superior direito
             limitesDefinidos = true;
         }
     }
@@ -45,7 +49,7 @@ public class InimigoCai : MonoBehaviour
     {
         if (colidiu.CompareTag("Player"))
         {
-           Destroy(gameObject) ;
+            Destroy(gameObject);
         }
     }
 }

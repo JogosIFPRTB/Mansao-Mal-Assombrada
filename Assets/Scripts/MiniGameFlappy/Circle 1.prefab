@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d37458db16cc2e4b8299dc550b3e1f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InimigoCai
-  velocidade: 5
+  velocidade: 3
   limiteInferior: -6
   spawnY: 6
   limiteX: 6
-  spawnTime: 2
+  spawnTime: 5

@@ -59,13 +59,17 @@
     <Compile Include="Assets\Scripts\movimento.cs" />
     <Compile Include="Assets\Sprites\Player\Scripts\Movimentação.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\ShooterVida.cs" />
+    <Compile Include="Assets\Scripts\palhaco\Persguidor1.cs" />
+    <Compile Include="Assets\Scripts\MiniGameFlappy\Parede.cs" />
     <Compile Include="Assets\Scripts\MiniGameFlappy\TargetSpawner.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\Spawner.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\Cronometro.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\InimigoSeguir.cs" />
     <Compile Include="Assets\Sprites\Mini_game1_objetos\Tremer.cs" />
+    <Compile Include="Assets\Scripts\ScriptHud\Painel.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\AmmoSpawner.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\SeguirMouse.cs" />
+    <Compile Include="Assets\Scripts\MiniGameFlappy\JOSE.cs" />
     <Compile Include="Assets\Scripts\MiniGameShoter\Arma.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\PlayerOver.cs" />
     <Compile Include="Assets\Scripts\Scripts Gerais\TrocaCenas.cs" />
