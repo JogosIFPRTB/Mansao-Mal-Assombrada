@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Cronometro : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Cronometro : MonoBehaviour
     [SerializeField]
     public float tempo;
     public TMP_Text textoCronometro;
-
+    public string cena;
    
     void Update()
     {
@@ -24,6 +25,7 @@ public class Cronometro : MonoBehaviour
             {
                 tempo = 0; // Trava no zero para o PlayerMusica conseguir ler
                 Debug.Log("Fim de Jogo");
+                SceneManager.LoadScene(cena);
             }
         }
     }
