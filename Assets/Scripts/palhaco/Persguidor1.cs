@@ -39,7 +39,7 @@ public class Persguidor1 : MonoBehaviour
             TempoAgora += aumentoDeVelo * Time.deltaTime;
 
             TempoAgora = Mathf.Clamp(TempoAgora, velocidade, MaximoDeVelo);
-            Debug.Log("Aumentando");
+            
         }
        
 
