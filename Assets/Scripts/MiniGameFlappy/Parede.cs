@@ -9,7 +9,7 @@ public class Parede : MonoBehaviour
     public float limiteInferior = -6f;
     public float spawnY = 6f;
     public float limiteX = 6f;
-    public float spawnTime = 3.5f;
+    public float lifeTime = 1620f;
     private Vector2 PosInit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,11 +27,12 @@ public class Parede : MonoBehaviour
     {
 
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
-
+        tempopo();
         // 2. Checa se ele passou do limite de baixo
-        if (transform.position.y < limiteMin.y)
+        if (lifeTime < 0)
         {
             transform.position = PosInit ;
+            lifeTime = 1620f;
         }
         ;
 
@@ -45,12 +46,9 @@ public class Parede : MonoBehaviour
             limitesDefinidos = true;
         }
     }
-    void OnTriggerEnter2D(Collider2D colidiu)
+    private void tempopo()
     {
-        if (colidiu.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
+        lifeTime--;
     }
 }
 
