@@ -2,9 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class TrocaCenas : MonoBehaviour
 {
-    public string JOGO1 = "MiniGameFlappy";
-    public string jogo2 = "ritmo";
-    public string jogo3 = "MiniGameShoter";
+    public string JOGO1 = "concept mini game 1";
+    public string jogo2 = "Mini Game Ritimo";
+    public string jogo3 = "Mini Game Shooter";
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

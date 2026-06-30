@@ -8,5 +8,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes cenarios/concept mini game 1.unity
     guid: a92fbce08026b9946ba635a8335047c6
+  - enabled: 1
+    path: Assets/Scenes/MEnuInicio.unity
+    guid: c5e800fe35f19754793baed6ab597a8e
+  - enabled: 1
+    path: "Assets/Scenes cenarios/mans\xE3o.unity"
+    guid: 8d07eae9a4bb87e49af5deb6510178b7
+  - enabled: 1
+    path: Assets/Scenes cenarios/Mini Game Shooter.unity
+    guid: d26146dd9fb5b0241804b1249dddb7ff
+  - enabled: 1
+    path: Assets/Scenes cenarios/Mini Game Ritimo.unity
+    guid: 4ece06f8f2f2093479267ca139c890f7
+  - enabled: 1
+    path: Assets/Scenes/gameOver.unity
+    guid: a4505199d86a9f5468cfcde4c4be9bcc
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
