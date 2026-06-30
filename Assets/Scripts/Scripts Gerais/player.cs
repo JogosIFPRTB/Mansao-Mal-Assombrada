@@ -10,6 +10,8 @@ public class player : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movimiento;
     public int vidas = 3;
+    [SerializeField]private Painel referencia;
+
 
     [Header("Configuração de UI")]
     public TextMeshProUGUI textoVidas;
@@ -23,6 +25,8 @@ public class player : MonoBehaviour
         // Encontra o script de Cronômetro que já existe na sua cena
         scriptCronometro = FindFirstObjectByType<Cronometro>();
         AtualizarTextoVidas();
+
+
     }
 
     void Update()
@@ -45,7 +49,12 @@ public class player : MonoBehaviour
                 }
             }
         }
+        if (transform.position.y <= -4.5)
+        {
+            referencia.AtivarDerrota();
+        }
     }
+        
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

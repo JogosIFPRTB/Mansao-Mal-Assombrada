@@ -57,6 +57,12 @@ public class Painel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+
+    public void CarregarCena(string nomeCena)
+    {
+        SceneManager.LoadScene(nomeCena);
+    }
+
     public void SairDoJogo()
     {
         Application.Quit();
