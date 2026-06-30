@@ -1,6 +1,6 @@
 
 using UnityEngine;
-
+using TMPro;
 
 public class notaJogo : MonoBehaviour
 {
@@ -11,6 +11,9 @@ public class notaJogo : MonoBehaviour
     private bool washit = false;
     private SpriteRenderer sr;
     public KeyCode key;
+    [SerializeField] public int pontos = 0;
+    [Header("Referências da UI")]
+    [SerializeField] private TextMeshProUGUI textoPontosUI;
 
     private void Start()
     {
@@ -33,24 +36,35 @@ public class notaJogo : MonoBehaviour
         {
             SetColor(Color.yellow);
             Debug.Log("amarei");
-            hit();
+           // hit();
+            pontos++;
+
+            AtualizarPlacar();
         }
         else if (difference <= azul)
         {
             SetColor(Color.blue);
             Debug.Log("arzur");
-            hit();
+           // hit();
+            pontos++;
+
+            AtualizarPlacar();
 
         }
         else if (difference <= vermelho)
         {
             SetColor(Color.red);
             Debug.Log("veimei");
-            hit();
+            //hit();
+            pontos++;
+
+            AtualizarPlacar();
         }
         else
         {
             Debug.Log("erro");
+            pontos--;
+            AtualizarPlacar();
         }
 
        
@@ -59,10 +73,13 @@ public class notaJogo : MonoBehaviour
     {
         sr.color = color;
     }
-    void hit()
+
+    public void AtualizarPlacar()
     {
-        washit = true;
-        Destroy(gameObject);
+        if (textoPontosUI != null)
+        {
+            textoPontosUI.text = "Pontos: " + pontos;
+        }
     }
 
 }
